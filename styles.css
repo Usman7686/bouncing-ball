@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding:0px ;
+    box-sizing: border-box;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  width: 80%;
+  height: 80px;
+  margin: 20px ;
+  background: black;
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.ball {
+  position: absolute;
+  bottom: 80px;
+  left: 100px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle at 30% 30%, rgb(209, 69, 69), rgb(247, 94, 94));
+  border-radius: 50%;
+  animation: bounce 3s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 400px;
+    left: 100px;
+    transform: scaleY(1);
+  }
+  25% {
+    bottom: 80px;
+    transform: scaleY(0.8);
+  }
+  50% {
+    bottom: 250px;
+    transform: scaleY(1);
+  }
+  70% {
+    bottom: 80px;
+    transform: scaleY(0.7);
+  }
+  80% {
+    bottom: 80px;
+    transform: scaleY(0.9);
+  }
+  85% {
+    bottom: 80px;
+    transform: scaleY(1);
+  }
+    90% {
+    bottom: 80px;
+    transform: scaleY(1.5);
+  }
+  100% {
+    bottom: 500px;
+    left: 800px;
+    transform: scaleY(1) rotate(720deg);
+  }
+}
+@keyframes{
+  
+}
